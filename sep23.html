@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>September 23</title>
+</head>
+<body>
+    <!-- <form action="" >
+        Color<input type="color" name="color" id="color"><br><br>
+        Date<input type="date" name="date" id="date"><br><br>
+        Datetime<input type="datetime" name="datetime" id="datetime"><br><br>
+        Email<input type="email" name="email" id="email"><br><br>
+        Hidden <input type="hidden" name="hidden" id="hidden"><br><br>
+        Month <input type="month" name="month" id="month"><br><br>
+        Range <input type="range" name="range" id="range"><br><br>
+        Tel <input type="tel" name="tel" id="tel"><br><br>
+        Time <input type="time" name="time" id="time"><br><br>
+        URL <input type="url" name="url" id="url"><br><br>
+        Week <input type="week" name="week" id="week"><br><br>
+        <button>Submit</button><br><br>
+
+
+    </form> -->
+<form action="sep23.html" autocomplete="on">
+    
+    <table >
+        <caption>Student Registration Form</caption>
+        <tr>
+            <td align="left">First Name</td>
+            <td align="left"><input type="text"  placeholder="First Name" name="first_name" id="first_name"></td>
+        </tr>
+        
+        <tr>
+            <td align="left">Last Name</td>
+            <td align="left"><input type="text" autocomplete="off" placeholder="Last Name" name="last_name" id="last_name"></td>
+        </tr>
+        
+        <tr>
+            <td align="left">Date of Birth</td>
+            <td align="left"><input type="date" name="date_of_birth" id="date_of_birth" ></td>
+        </tr>
+        
+        <tr>
+            <td align="left">Email</td>
+            <td align="left"><input type="email" required placeholder="name@domain.com" name="email" id="email"></td>
+        </tr>
+        
+        <tr>
+            <td align="left">My Photo</td>
+            <td align="left"><input type="file" name="my_photo" id="my_photo"></td>
+        </tr>
+        
+        <tr>
+            <td align="left">Gender</td>
+            <td align="left">
+                <label ><input type="radio" name="Gender" value="male">male</label>
+                <label ><input type="radio" name="Gender" value="female">female</label>
+                <label ><input type="radio" name="Gender" value="other">other</label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td align="left">
+                <label for="mySelect">Ambition</label>
+
+              <td align="left">
+                <select id="mySelect" name="Ambition">
+                    <option value="Engineering">Engineering</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Pilot">Pilot</option>
+                    <option value="Teacher">Teacher</option>
+              </td>
+              
+                
+            
+</select>
+            </td>
+        </tr>
+        <tr>
+            <td align="left">Address</td>
+            <td align="left"><textarea name="address" id="address" cols="20" rows="5"></textarea></td>
+        </tr>
+        
+        <tr>
+            <td align="left">City</td>
+            <td align="left"><input type="text" name="city_name" id="city_name"></td>
+        </tr>
+        <tr>
+            <td align="left">Pin Code</td>
+            <td align="left"><input type="number" name="city_pin" id="city_pin"></td>
+        </tr>
+        <tr>
+            <td align="left">State</td>
+            <td align="left"><input type="text" name="state_name" id="state_name"></td>
+        </tr>
+        <tr>
+            <td align="left">Country</td>
+            <td align="left"><input type="text" name="country_name" id="country_name"></td>
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Hobbies"><input type="checkbox" name="Reading" id="Reading">Reading</label></td>
+        </tr>
+        <tr>
+            <td>
+                
+                <label for="Hobbies"><input type="checkbox" name="Playing" id="Playing">Playing</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+                <label for="Hobbies"><input type="checkbox" name="Singing" id="Singing">Singing</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+                <label for="Hobbies"><input type="checkbox" name="Dancing" id="Dancing">Dancing</label>
+            </td>
+        </tr>
+  
+        
+        <tr>
+
+            <td colspan="2">
+                <table>
+                    <caption>Qualification</caption>
+                    <tr>
+                        <th></th>
+                        <th>Board</th>
+                        <th>Percentage</th>
+                        <th>Year of Passing</th>
+                    </tr>
+                    <tr>
+                        <td>10th</td>
+                        <td><input type="text" name="10thBoard" id="10thBoard"></td>
+                        <td><input type="number" name="Percentage10" id="10Percent"></td>
+                        <td><input type="month" name="YOP10" id="YOP10"></td>
+                    </tr>
+                    <tr>
+                        <td>12th</td>
+                        <td><input type="text" name="12thBoard" id="12thBoard"></td>
+                        <td><input type="number" name="Percentage12" id="12Percent"></td>
+                        <td><input type="month" name="YOP12" id="YOP12"></td>
+                    </tr>
+                    <tr>
+                        <td>Graduation</td>
+                        <td><input type="text" name="Grad_Board" id="Grad_Board"></td>
+                        <td><input type="number" name="Percentage_Grad" id="Grad_Percent"></td>
+                        <td><input type="month" name="YOP_Grad" id="YOP_Grad"></td>
+                    </tr>
+    
+                </table>
+            </td>
+
+       
+
+        </tr>
+
+              <tr>
+            <td align="left">Username</td>
+            <td align="left"><input type="text" name="user_name" id="user_name"></td>
+        </tr>
+        
+        <tr>
+            <td align="left">Password</td>
+            <td align="left"><input type="password" name="password" id="password"></td>
+        </tr>
+
+       
+
+
+    </table>
+    <br><br>
+    <button>SUBMIT</button>
+</form>
+</body>
+</html>

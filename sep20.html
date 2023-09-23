@@ -1,0 +1,38 @@
+<!-- cell spacing is used to specify the distance between the cells
+cellpadding is used to specify the distance between content and inner walls of the cells -->
+
+<!-- <table border="1" align="center" cellspacing="20" cellpadding="20"> -->
+<!-- 
+    Forms
+
+    GET:
+    1.appends the form data in the URL in name-value pair
+    2.length of URL is limied
+    3.never use get method to send sensitive data
+    4.get method is better for non secure data
+
+    POST:
+    1.appends form data inside the body of the HTTP request
+    2.data not shown in URL
+    3.form submission with post cannot be bookmarked -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="">
+          <label for="items"><input type="checkbox" name="Groceries" value="milk" >Milk</label>  <br>
+          <label for="items"><input type="checkbox" name="Groceries" value="Vegetables" >Vegetables</label>  <br>
+          <label for="items"><input type="checkbox" name="Groceries" value="Eggs" >Eggs</label>  <br>
+          <label for="items"><input type="checkbox" name="Groceries" value="Bread" >Bread</label>  <br>
+          <label for="items">Comments:<input type="text"></label>
+<br>
+          <label ><input type="radio" name="payment" value="online">Online</label>
+          <label ><input type="radio" name="payment" value="Cash on Delivery">Cash on Delivery</label>
+        </form>
+    </body>
+    </html>
