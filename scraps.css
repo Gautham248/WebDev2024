@@ -1,0 +1,16 @@
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkorchid;
+    size: 200;
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: xx-large;
+    color: chartreuse;
+}
+
+p{
+    font-size: 50;
+    font-family: sans-serif;
+}

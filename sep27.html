@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        body b i {
+            font-size: 48;
+            color:red ;
+        }
+
+        p.question{ font-size: 200; color: cadetblue; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+        p.answer{color: darkblue;}
+
+        .generic{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: brown; position: relative; width: 500px;}
+
+
+    </style>
+</head>
+
+<body>
+    
+    <b>Welcome to the <i>class</i> on selectors</b>
+    <h2>6 different type of selectors</h2>
+        <ul>
+            <li>Simple Selector</li>
+            <li>Class Selector</li>
+            <li>Generic Selector</li>
+
+        </ul>
+    <section>
+        <h3>Simple Selctor</h3>
+        <p>Simple selector form is a list of style rules and property values in the rule apply to all occurences of all of the names elemment</p>
+    </section>        
+    <section>
+        <h3>Class Selector</h3>
+        <p>Used to allow different occurences of the same tag to use different style specifications <br>p.ques{property value list} <br>p.ans{property value list} <br> example: </p>
+        <p class="question">What is WWW?</p>
+        <p class="answer"> WWW is world wide web, an information repository that can be accessed over the internet</p>
+        <p class="question">What is GATE?</p>
+        <p class="answer"> GATE is Graduate Aptitude Test in Engineering, a test for Engineering graduates</p>
+    </section>
+    <section>
+        <h3>Generic Selector</h3>
+        <p>A generic selector can be used of you want a style to be applied to more than one kind of tag <br> A generic class must be named and the name must given with a period without a tag <br>example:</p>
+        <h4 class="generic">This is an h4 tag</h4>
+        <p class="generic">This is a paragraph tag</p>
+    </section>
+</body>
+</html>
