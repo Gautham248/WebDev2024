@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion</title>
+    <script type="text/javascript">
+
+function factorial(x) {
+            if (x == 0) {
+                     return 1;
+            }
+            else {
+                   return x * factorial(x - 1);
+            }
+}
+        const num=prompt("Enter a number : ")
+        if(num>0)
+        {
+
+            const result = factorial(num);
+            alert(result);
+
+        }
+
+        function fact_form()
+        {
+            var f=document.form1.Num.value;
+            factorial(f);
+        }
+
+    </script>
+
+
+</head>
+<body>
+
+    <form action="" method="post" name="form1">
+        <label for="Num">Num: <input type="number" name="Num" id="Num"/></label> <br><br>
+        <input type="button" onclick="fact_form()" value="Submit"><br><hr>
+    </form>
+    
+</body>
+</html>

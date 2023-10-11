@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function myFun(a,b)
+        {
+            return a*b;
+        }
+        var x=myFun(4,3);
+        alert(x);
+        function newfun(a,b)
+        {
+            return a*b;
+        }
+        alert(newfun(10,5));
+
+        function test()
+        {
+            document.getElementById("Hello").innerHTML="Welcome to JS Functions";
+        }
+
+        function greeting()
+        {
+            var name=document.form1.Name.value;
+            var age=document.form1.Age.value;
+            alert("Hello " + name + ", You are " + age + " years old");
+            //document.writeln("Hello " + name + ", You are " + age + " years old");
+        }
+
+        
+
+        function Maximum()
+        {
+            var num1=window.prompt("No.1","");
+            var num2=window.prompt("No.2","");
+            var num3=window.prompt("No.3","");
+            var x=parseFloat(num1);
+            var y=parseFloat(num2);
+            var z=parseFloat(num3);
+            var maxval=Math.max(x,Math.max(y,z));
+            alert("The highest of three numbers is : "+maxval);  
+            
+
+
+        }
+    </script>
+</head>
+<body>
+
+    <p id="Hello">Hello World</p>
+    <input type="button" onclick="test()" value="try to change"><br><hr>
+    
+  
+
+   <form action="#" method="post" name="form1">
+    <label for="Name">Name: <input type="text" name="Name" id="Name"/></label> <br><br>
+    <label for="Age">Age: <input type="number" name="Age" id="Age"/></label> <br><br>
+    
+    <input type="button" onclick="greeting()" value="Submit"><br><hr>
+   </form>
+
+   <input type="button" onclick="Maximum()" value="Maximum of three numbers"><br><hr>
+</body>
+</html>

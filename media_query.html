@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: aqua;
+        }
+
+        .topnav a{
+            float: left;
+            display: block;
+            color: brown;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover{
+            background-color: #ddd;
+            color: black;
+        }
+
+        @media screen and (max-width: 600px){
+
+            .topnav{
+                background-color: blueviolet;
+            }
+            .topnav a{
+                float: none;
+                width: 100%;
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>SJCET Palai</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sed cumque harum natus. Provident porro placeat quo suscipit laborum soluta commodi exercitationem, tempora nobis voluptas, itaque nisi sit! Cupiditate maiores nemo aliquam tenetur aperiam aut cumque eius perspiciatis corrupti dolorem.</p>
+    <div class="topnav">
+        <a href="#">Home</a><br>
+        <a href="#">About</a><br>
+        <a href="#">Contact Us</a>
+
+    </div>
+</body>
+</html>

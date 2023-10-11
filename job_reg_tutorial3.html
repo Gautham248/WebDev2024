@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Job Site Registration</h1>
+    
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" required><br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label>Sex:</label><br>
+        <input type="radio" id="male" name="sex" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="female">
+        <label for="female">Female</label><br><br>
+        
+        <label>Area of Interest:</label><br>
+        <input type="checkbox" id="interest1" name="interest[]" value="programming">
+        <label for="interest1">Programming</label>
+        <input type="checkbox" id="interest2" name="interest[]" value="design">
+        <label for="interest2">Design</label>
+        <input type="checkbox" id="interest3" name="interest[]" value="marketing">
+        <label for="interest3">Marketing</label><br><br>
+        
+        <label for="experience">Years of Experience:</label>
+        <select id="experience" name="experience">
+            <option value="0">No experience</option>
+            <option value="1-3">1-3 years</option>
+            <option value="4-6">4-6 years</option>
+            <option value="7+">7+ years</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

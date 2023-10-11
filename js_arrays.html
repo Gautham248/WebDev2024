@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var i;
+        var s=["aa","bb","cc","dd"]
+        alert(s);
+        alert(s.length);
+
+        //add new array elements using push function
+        // arrayname.push(new_element)
+document.writeln("<ol>");
+        s.push("ee")
+        for(i=0;i<s.length;i++)
+        {
+            document.writeln("<li>"+s[i]+"</li>");
+        }
+        document.writeln("</ol>");
+        document.writeln("<p> After Pop Function </p>");
+        s.pop();
+        document.writeln("<ol>");
+    
+        for(i=0;i<s.length;i++)
+        {
+            document.writeln("<li>"+s[i]+"</li>");
+        }
+        document.writeln("</ol>");
+        document.writeln("<p> Enhanced For Loop </p>");
+        document.writeln("<ol>");
+    
+    for (i in s){
+        document.writeln("<li>"+s[i]+"</li>");
+    }
+    document.writeln("</ol>");
+        
+    //shift method removes the first element of the array
+    document.writeln("<p> Shift method to remove the first element</p>");
+    s.shift();
+        document.writeln("<ol>");
+    
+    for (i in s){
+        document.writeln("<li>"+s[i]+"</li>");
+    }
+    document.writeln("</ol>");
+
+     //unshift method adds a new element to the beginning of the array
+     document.writeln("<p> Unshift method adds new element at the beginning of the array</p>");
+    s.unshift("xx");
+        document.writeln("<ol>");
+    
+    for (i in s){
+        document.writeln("<li>"+s[i]+"</li>");
+    }
+    document.writeln("</ol>");
+
+    //delete method can remove an element from a specific position in the array but it can leave undefined holes in the memory
+
+    //splice method can be used to add new items to an array
+    //first parameter of splice define the postion at which the element is to be inserted at 
+    //second parameter defines the index of element to be removed
+    document.writeln("<p> Splice function to edit the array</p>");
+    var fruits=["Banana","Apple","Orange"];
+    fruits.splice(2,0,"lemon","kiwi");
+
+    document.writeln("<ol>");
+        for(i in fruits){
+            document.writeln("<li>"+fruits[i]+"</li>");
+        }
+    document.writeln("</ol>");
+
+    //Merging arrays using concat method
+    //concat method creates new array by merging two existing arrays
+    // array1.concat(array2)
+    document.writeln("<p> Concat function to merge two arrays</p>");
+    var new_arr=s.concat(fruits)
+    document.writeln("<ol>");
+        for(i in new_arr){
+            document.writeln("<li>"+new_arr[i]+"</li>");
+        }
+    document.writeln("</ol>");
+
+    // array1.concat(["value1","value2"....])
+    // concat method can also take values as arguments
+
+
+    //slice method creartes a new array
+    // var new=fruits.slice(1)
+
+    
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -16,7 +16,9 @@
         .generic{ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: brown; position: relative; width: 500px;}
 
-
+        #ex1{font-size: 70;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: coral; font-weight: bold;}
+        input:hover{color: red;border: dotted;}
+        input:focus{color: green;border-color: yellow;}
     </style>
 </head>
 
@@ -28,6 +30,9 @@
             <li>Simple Selector</li>
             <li>Class Selector</li>
             <li>Generic Selector</li>
+            <li>Id Selector</li>
+            <li>Universal Selector</li>
+            <li>PseudoClass </li>
 
         </ul>
     <section>
@@ -47,6 +52,23 @@
         <p>A generic selector can be used of you want a style to be applied to more than one kind of tag <br> A generic class must be named and the name must given with a period without a tag <br>example:</p>
         <h4 class="generic">This is an h4 tag</h4>
         <p class="generic">This is a paragraph tag</p>
+    </section>
+    <section>
+        <h3>Id Selector</h3>
+        <p>An Id selector allows the application of a style to one specific element <br> example : <br> 
+        <ul><li id="ex1">
+            example 1
+        </li>
+    <li id="ex2">example 2</li>
+</ul></p>
+
+    </section>
+    <section>
+        <h3>Universal Selector</h3>
+    </section>
+    <section>
+        <h3>PseudoClass</h3>
+        <p>Your Name: <input type="text" name="name" id="name"></p>
     </section>
 </body>
 </html>
